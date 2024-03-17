@@ -23,4 +23,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /code/
 
 # Run the entrypoint script
-ENTRYPOINT ["/code/docker/api/entrypoint.sh"]
+ENTRYPOINT ["/code/docker/api/entrypoint.sh", "--noinput"]

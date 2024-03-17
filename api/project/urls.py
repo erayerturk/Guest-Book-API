@@ -23,7 +23,6 @@ from api.project.api_doc import schema_view
 from api.user import urls as user_urls
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
     path("api/v1/users", include(user_urls)),
     path("api/v1/entries", include(entry_urls)),
     path(

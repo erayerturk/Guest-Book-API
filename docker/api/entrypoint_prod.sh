@@ -13,11 +13,11 @@ done
 >&2 echo "PostgreSQL is up - continuing..."
 
 # Collect static files
-python manage.py collectstatic
+python manage.py collectstatic --noinput
 
 # Apply migrations
 python manage.py makemigrations
 python manage.py migrate
 
 # Start the API
-exec gunicorn api.project.wsgi:application --bind 0.0.0.0:8000 --workers 3
+exec gunicorn api.project.wsgi:application --bind 0.0.0.0:8000 --workers 3 --preload

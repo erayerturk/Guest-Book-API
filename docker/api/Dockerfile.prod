@@ -29,4 +29,4 @@ COPY . /code/
 EXPOSE 8000
 
 # Run the entrypoint script
-ENTRYPOINT ["/code/docker/api/entrypoint_prod.sh"]
+ENTRYPOINT ["/code/docker/api/entrypoint_prod.sh", "--noinput"]

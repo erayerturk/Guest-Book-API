@@ -20,6 +20,7 @@ platformdirs==4.2.0
 pluggy==1.4.0
 pre-commit==3.6.2
 psycopg2-binary==2.9.9
+pylint==3.1.0
 pytest==8.1.1
 pytest-django==4.8.0
 python-dateutil==2.9.0.post0
@@ -32,3 +33,4 @@ sqlparse==0.4.4
 tomlkit==0.12.4
 uritemplate==4.1.1
 virtualenv==20.25.1
+whitenoise==6.6.0
