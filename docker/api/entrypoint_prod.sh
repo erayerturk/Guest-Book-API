@@ -12,6 +12,9 @@ done
 
 >&2 echo "PostgreSQL is up - continuing..."
 
+# Collect static files
+python manage.py collectstatic
+
 # Apply migrations
 python manage.py makemigrations
 python manage.py migrate

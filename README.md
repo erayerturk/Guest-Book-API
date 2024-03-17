@@ -9,7 +9,11 @@ Create and list entries for a guest book via API
 
 ## Tech Stack
 
-**Server:** Python, Django, Docker, Django Rest Framework, Swagger, Pre-commit
+* Python
+* Django
+* Docker
+* Django Rest Framework
+* Pytest
 
 
 ## Deployment
@@ -35,7 +39,7 @@ To deploy this project to production
 
 ## Running Tests
 
-Normally, the tests are running automatically when the build the project. If there is any error in tests the project will not running.
+Normally, the tests are running automatically while building the project. If there is any error in tests the project will not run.
 
 To run tests manually, run the following command while project containers running
 
