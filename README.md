@@ -39,8 +39,7 @@ To deploy this project to production
 
 ## Running Tests
 
-Normally, the tests are running automatically while building the project. If there is any error in tests the project will not run.
-
+The tests typically run automatically during the project build process. If any errors occur in the tests, the project will not proceed.
 To run tests manually, run the following command while project containers running
 
 ```bash
