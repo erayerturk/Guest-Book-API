@@ -148,3 +148,7 @@ REST_FRAMEWORK = {
     # or allow read-only access for unauthenticated users.
     "DEFAULT_PERMISSION_CLASSES": []
 }
+
+# Page size for pagination
+
+PAGINATION_PAGE_SIZE = 3
