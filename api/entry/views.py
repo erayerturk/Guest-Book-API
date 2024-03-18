@@ -13,7 +13,7 @@ class EntryListCreateAPIView(PaginationMixin, ListCreateAPIView, GenericViewSet)
     This view allows users to list existing entries and create new entries.
 
     ### Authentication:
-    - Authentication is required to access this endpoint.
+    - No authentication is required to access this endpoint.
 
     ### Response format:
     - The response format is JSON.
@@ -33,7 +33,7 @@ class EntryListCreateAPIView(PaginationMixin, ListCreateAPIView, GenericViewSet)
         "user": "example_user",
         "subject": "Example Subject",
         "message": "Example Message",
-        "created_date": "2022-03-15T12:00:00Z"
+        "created_date": "16/03/2024 - 10:10:10"
     }
     ```
 
@@ -45,8 +45,8 @@ class EntryListCreateAPIView(PaginationMixin, ListCreateAPIView, GenericViewSet)
     - These endpoints are public and does not require any specific permissions.
 
     ### Path:
-    - GET /api/v1/entries/ : List existing entries
-    - POST /api/v1/entries/ : Create a new entry
+    - GET /api/v1/entries : List existing entries, arranging them in descending order based on their creation time.
+    - POST /api/v1/entries : Create a new entry
     """
 
     queryset = Entry.objects.select_related("user")
